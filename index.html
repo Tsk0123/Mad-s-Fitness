@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- Opening tag for the HTML document with language set to English -->
+<head> <!-- Start of the head section -->
+<meta charset="UTF-8"> <!-- Character encoding declaration -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag for responsive design -->
+<title>Mad's Fitness TDEE Calculator</title> <!-- Title of the webpage -->
+<link rel="stylesheet" type="text/css" href="index.css">
+<!-- Link to external CSS file for styling -->
+</head> <!-- End of the head section -->
+<body> <!-- Start of the body section -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="image/395341383_122101129430090652_3750794800876894708_n-removebg.png" alt="Mad's Fitness Logo"> Fitness
+        </a>
+        <nav class="navbar">
+            <a href="home.html" title="Move to Home">Home</a>
+            <a href="index.html" title="Move to TDEE Calculator">Calculator</a>
+            <a href="exercises.html" title="Move to Exercises Description">Exercises</a>
+        </nav>
+    </header>
+
+    <div id="calculator"> <!-- Calculator section -->
+        <h2>TDEE Calculator</h2> <!-- Heading for the TDEE Calculator -->
+        <form onsubmit="return validateAndCalculate()"> <!-- Form for input values with validation and calculation on submission -->
+
+            <label for="weight">Weight (kg):</label> <!-- Label for weight input -->
+            <input type="number" id="weight" min="0" required><br> <!-- Weight input field -->
+            <label for="height">Height (cm):</label> <!-- Label for height input -->
+            <input type="number" id="height" min="0" required><br> <!-- Height input field -->
+            <label for="age">Age:</label> <!-- Label for age input -->
+            <input type="number" id="age" min="0" required><br> <!-- Age input field -->
+            <label>Gender:</label> <!-- Label for gender input -->
+
+            <div id="gender"> <!-- Gender input section -->
+                <input type="radio" id="male" name="gender" value="male" required> <!-- Male radio button -->
+                <label for="male" class="gender-label">Male</label> <!-- Label for male radio button -->
+                <input type="radio" id="female" name="gender" value="female" required> <!-- Female radio button -->
+                <label for="female" class="gender-label">Female</label> <!-- Label for female radio button -->
+            </div> <!-- End of gender input section -->
+
+            <label for="activityLevel">Activity Level:</label> <!-- Label for activity level selection -->
+            <select id="activityLevel" required> <!-- Dropdown for selecting activity level -->
+                <option value="">Select activity level</option> <!-- Default option -->
+                <option value="1.2">Sedentary (little or no exercise)</option> <!-- Option for sedentary activity level -->
+                <option value="1.375">Lightly active (light exercise/sports 1-3 days/week)</option> <!-- Option for lightly active activity level -->
+                <option value="1.55">Moderately active (moderate exercise/sports 3-5 days/week)</option> <!-- Option for moderately active activity level -->
+                <option value="1.725">Very active (hard exercise/sports 6-7 days a week)</option> <!-- Option for very active activity level -->
+                <option value="1.9">Extra active (very hard exercise/sports & physical job)</option> <!-- Option for extra active activity level -->
+
+            </select><br> <!-- End of activity level selection dropdown -->
+            <label for="goal">Goal:</label> <!-- Label for goal selection -->
+            <select id="goal" required> <!-- Dropdown for selecting goal -->
+                <option value="">Select goal</option> <!-- Default option -->
+                <option value="maintain">Maintain weight</option> <!-- Option for maintaining weight -->
+                <option value="lose">Lose weight</option> <!-- Option for losing weight -->
+                <option value="gain">Gain muscle</option> <!-- Option for gaining muscle -->
+            </select><br> <!-- End of goal selection dropdown -->
+
+            <button type="submit" title="Click to Calculate">Calculate!</button> <!-- Button to submit form -->
+            
+            <span id="errorMessage" style="display: none; color: red;">Please fill out the form correctly</span> <!-- Error message for form validation -->
+        </form> <!-- End of form -->
+    </div> <!-- End of calculator section -->
+<script src="index.js"></script> <!-- Script for form validation and calculation -->
+</body> <!-- End of the body section -->
+</html> <!-- End of the HTML document -->

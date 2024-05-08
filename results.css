@@ -1,0 +1,174 @@
+@import url('fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.header .logo {
+    font-size: 24px; /* Increase the font size */
+    font-weight: bolder;
+    color: #008000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Center the logo at the left */
+}
+
+.header .logo img {
+    width: 40px; /* Increase the width of the logo image */
+    height: auto;
+    margin-right: 10px;
+}
+
+.header .max-width {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header stays on top of other content */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+/* Set a nice background color */
+body {
+    font-family: Arial, sans-serif; /* Font family for the body */
+    background-color: #f8f9fa; /* Background color for the body */
+    padding-top: 110px; /* Add padding equal to the height of the header */
+}
+
+#header {
+    background-image: url("image/395341383_122101129430090652_3750794800876894708_n-removebg.png"); /* Background image for the header */
+    background-size: 10%; /* Background image size */
+    background-repeat: no-repeat; /* Background image repeat */
+    background-position: right; /* Background image position */
+    color: #000000; /* Text color for the header */
+    padding: 35px; /* Padding for the header */
+    font-weight: bold; /* Font weight for the header */
+    text-align: left; /* Text alignment in the header */
+    background-color: #4b6f44; /* Background color for the header */
+}
+
+#calories, #macronutrients, #bmi, #idealWeight, #workoutPlan {
+    text-align: center; /* Center align text content */
+    margin: 20px auto; /* Set margin to auto on top and bottom, and auto horizontally to center align */
+    width: 80%; /* Set a width to ensure center alignment */
+    background-color: #fff; /* Background color for specific sections */
+    margin-top: 20px; /* Margin at the top for specific sections */
+    padding: 20px; /* Padding for specific sections */
+    border-radius: 8px; /* Border radius for specific sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow for specific sections */
+}
+
+
+h3 {
+    color: #333; /* Text color for h3 headings */
+}
+
+p {
+    color: #666; /* Text color for paragraphs */
+    line-height: 1.6; /* Line height for paragraphs */
+}
+
+span {
+    font-weight: bold; /* Font weight for spans */
+    color: #333; /* Text color for spans */
+}
+
+#workoutPlanDescription {
+    margin-top: 10px; /* Margin at the top for the workout plan description */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) { /* Media query for screens with maximum width of 600px */
+    .container {
+        padding: 10px; /* Adjusted padding for container on smaller screens */
+    }
+
+    #calories, #macronutrients, #bmi, #idealWeight, #workoutPlan, #weightStatus {
+        padding: 15px; /* Adjusted padding for specific sections on smaller screens */
+    }
+
+    .logo {
+        font-size: 20px; /* Adjusted font size for logo on smaller screens */
+    }
+
+    h3 {
+        font-size: 18px; /* Adjusted font size for h3 headings on smaller screens */
+    }
+
+    p {
+        font-size: 16px; /* Adjusted font size for paragraphs on smaller screens */
+    }
+}
+
+/* Additional styles */
+#dsa {
+    text-align: center; /* Text alignment for specific element */
+    font-weight: 50; /* Font weight for specific element */
+}
+
+#cal {
+    font-weight: 30; /* Font weight for specific element */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+

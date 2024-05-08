@@ -1,0 +1,200 @@
+@import url('fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: underline;
+}
+
+.header .logo {
+  font-size: 24px; /* Increase the font size */
+  font-weight: bolder;
+  color: #008000;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Center the logo at the left */
+}
+
+.header .logo img {
+  width: 40px; /* Increase the width of the logo image */
+  height: auto;
+  margin-right: 10px;
+}
+
+.header .max-width {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays on top of other content */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+section {
+  padding: 50px 0 50px 0;
+}
+
+/* Set a nice background color */
+body {
+  background-size: 100% 100% ; /* Set background size to cover */
+  background-attachment: fixed; /* Fix background position */
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  font-family: Arial, sans-serif; /* Use Arial font or fallback to sans-serif */
+  background-color: #f8f9fa; /* Set background color */
+}
+
+#header {
+  background-image: url("image/395341383_122101129430090652_3750794800876894708_n-removebg.png"); /* Set the image as background for the entire header */
+  background-size: 10% ; /* Adjust image size to cover the entire header */
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  background-position: right; /* Set background position */
+  color: #000000; /* Set text color */
+  padding: 35px; /* Add padding */
+  font-weight: bold; /* Make text bold */
+  text-align: left; /* Set text alignment */
+  background-color:  #4B6F44; /* Set background color with transparency */
+}
+
+/* Calculator container styling */
+#calculator {
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Prevent background from repeating */
+  background-position: center; /* Center the background image */
+  width: 100%; /* Set width to 100% */
+  max-width: 600px; /* Set maximum width */
+  margin: 200px auto 20px; /* Add margin with top margin to push the calculator below the header */
+  padding: 30px; /* Add padding */
+  background-color: #fff; /* Set background color */
+  border: 1px solid #dee2e6; /* Add border */
+  border-radius: 10px; /* Add border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Calculator title styling */
+#calculator h2 {
+  margin-bottom: 20px; /* Add margin at the bottom */
+  color: #000000; /* Set text color */
+  text-align: center; /* Center the text */
+}
+
+/* Label styling */
+label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 8px; /* Add margin at the bottom */
+  color: #060606; /* Set text color */
+  font-weight: bold; /* Making labels bold */
+}
+
+/* Input field styling */
+input[type="number"],
+select {
+  width: calc(100% - 20px); /* Set width */
+  padding: 10px; /* Add padding */
+  margin-bottom: 15px; /* Add margin at the bottom */
+  border: 1px solid #ced4da; /* Add border */
+  border-radius: 6px; /* Add border radius */
+  background-color: #f8f9fa; /* Set background color */
+}
+
+.gender-label {
+  display: inline-block; /* Make labels inline */
+  margin-right: 15px; /* Adjust spacing between labels */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Adjust text color */
+}
+
+/* Button container for gender */
+.gender-buttons {
+  margin-bottom: 45px; /* Add some space below the gender buttons */
+}
+
+/* Button styling */
+button {
+  width: 100%; /* Set width to 100% */
+  padding: 12px; /* Add padding */
+  background-color: #4B6F44; /* Set background color */
+  font-size: 25px; /* Set font size */
+  font-weight: 400; /* Set font weight */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+  background-color: #030303; /* Change background color on hover */
+}
+
+/* Responsive styles */
+/* For screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  #calculator {
+      padding: 20px; /* Add padding */
+  }
+
+  input[type="number"],
+  select {
+      width: 100%; /* Set width to 100% */
+  }
+}
+
+/* For screens between 601px and 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #calculator {
+      max-width: 500px; /* Set maximum width */
+  }
+}
+
+/* For screens larger than 768px */
+@media only screen and (min-width: 769px) {
+  #calculator {
+      max-width: 600px; /* Set maximum width */
+  }
+}
+
+#text {
+  text-align: center; /* Center align text */
+}
+
+

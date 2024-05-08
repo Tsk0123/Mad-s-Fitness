@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- Opening tag for the HTML document with language set to English -->
+<head> <!-- Start of the head section -->
+<meta charset="UTF-8"> <!-- Character encoding declaration -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Viewport meta tag for responsive design -->
+<title>Mad's Fitness TDEE Calculator Results</title> <!-- Title of the webpage -->
+<link rel="stylesheet" type="text/css" href="results.css"> <!-- Link to external CSS file for styling -->
+</head> <!-- End of the head section -->
+<body> <!-- Start of the body section -->
+    <header class="header">
+        <a href="home.html" class="logo">
+            <img src="image/395341383_122101129430090652_3750794800876894708_n-removebg.png" alt="Mad's Fitness Logo"> Fitness
+        </a>
+        <nav class="navbar">
+            <a href="home.html" title="Move to Home">Home</a>
+            <a href="index.html" title="Move to TDEE Calculator">Calculator</a>
+            <a href="exercises.html" title="Move to Exercises Description">Exercises</a>
+        </nav>
+    </header>
+
+    <div id="calories"> <!-- Calories section -->
+        <h3>Calories:</h3> <!-- Heading for calories section -->
+        <p>Calories per day: <span id="caloriesPerDay"></span></p> <!-- Display calories per day -->
+        <p>Calories per week: <span id="caloriesPerWeek"></span></p> <!-- Display calories per week -->
+    </div> <!-- End of calories section -->
+    
+    <div id="macronutrients"> <!-- Macronutrients section -->
+        <h3>Macronutrients Intake:</h3> <!-- Heading for macronutrients section -->
+        <p>Protein: <span id="protein"></span> grams per day (<span id="proteinCalories"></span> calories)</p> <!-- Display protein intake -->
+        <p>Fat: <span id="fat"></span> grams per day (<span id="fatCalories"></span> calories)</p> <!-- Display fat intake -->
+        <p>Carbohydrates: <span id="carbs"></span> grams per day (<span id="carbCalories"></span> calories)</p> <!-- Display carbohydrate intake -->
+    </div> <!-- End of macronutrients section -->
+
+    <div id="bmi"> <!-- BMI section -->
+        <h3>BMI:</h3> <!-- Heading for BMI section -->
+        <p>Your BMI is: <span id="bmiValue"></span></p> <!-- Display BMI value -->
+        <p>Your weight Status is: <span id="weightStatus"></span></p> <!-- Display weight status -->
+    </div> <!-- End of BMI section -->
+
+    <div id="idealWeight"> <!-- Ideal weight section -->
+        <h3>Ideal Weight:</h3> <!-- Heading for ideal weight section -->
+        <p>Your ideal weight is: <span id="idealWeightValue"></span> kg</p> <!-- Display ideal weight value -->
+    </div> <!-- End of ideal weight section -->
+    
+    <div id="workoutPlan"> <!-- Workout plan section -->
+        <h3>Workout Plan:</h3> <!-- Heading for workout plan section -->
+        <div id="workoutPlanDescription"></div> <!-- Display workout plan description -->
+    </div> <!-- End of workout plan section -->
+
+<script src="results.js"></script> <!-- Script for displaying results -->
+</body> <!-- End of the body section -->
+</html> <!-- End of the HTML document -->

@@ -1,0 +1,162 @@
+@import url('fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.header .logo {
+    font-size: 24px; /* Increase the font size */
+    font-weight: bolder;
+    color: #008000;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Center the logo at the left */
+}
+
+.header .logo img {
+    width: 40px; /* Increase the width of the logo image */
+    height: auto;
+    margin-right: 10px;
+}
+
+.header .max-width {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background: #ffffff; /* Change background to white */
+    color: #008000; /* Change font color to green */
+}
+
+.btn {
+    margin-top: 2rem;
+    width: 150px;
+    padding: 12px;
+    color: #fff;
+    background: tomato;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgbaa(212, 48, 48, 0.76);
+    transition: 0.4s;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header stays on top of other content */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section {
+    padding: 50px 0 50px 0;
+}
+
+.home {
+    display: flex;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+}
+
+.home .home-content {
+    width: 50%;
+    padding: 2rem;
+    margin-left: auto;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center items horizontally */
+    padding-top: 100px; /* Add top padding to create space between images and header */
+}
+
+.image-container {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 20px; /* Adds spacing between images */
+}
+
+.image-container img {
+    max-width: 100%; /* Set maximum width to 100% of container */
+    max-height: 300px; /* Set maximum height */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
+
+.description {
+    text-align: center; /* Center text within the container */
+}
+
+.description li {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-position: inside; /* This ensures that the bullets are inside the list item */
+    padding-left: 0; /* Remove default padding */
+}
+
+li {
+    text-align: center; /* Center the text */
+}
